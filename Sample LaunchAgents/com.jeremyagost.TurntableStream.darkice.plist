@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Label</key>
+	<string>com.jeremyagost.TurntableStream.darkice</string>
+	<key>RunAtLoad</key>
+	<true/>
+	<key>KeepAlive</key>
+	<dict>
+		<key>OtherJobEnabled</key>
+		<dict>
+			<key>com.jeremyagost.TurntableStream.icecast</key>
+			<true/>
+			<key>com.jeremyagost.TurntableStream.jackd</key>
+			<true/>
+		</dict>
+	</dict>
+	<key>ProgramArguments</key>
+	<array>
+		<string>/usr/local/bin/darkice</string>
+		<string>-c</string>
+		<string>/Users/jeremy/TurntableStream/darkice.cfg</string>
+	</array>
+	<key>StandardOutPath</key>
+	<string>/tmp/com.jeremyagost.TurntableStream.darkice.stdout</string>
+	<key>StandardErrorPath</key>
+	<string>/tmp/com.jeremyagost.TurntableStream.darkice.stderr</string>
+</dict>
+</plist>
